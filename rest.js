@@ -1,5 +1,16 @@
 const express= require('express');
 const app=express();
+//enabling middleware
+app.use(express.json)
+const Items=[{
+id:'1',
+name:'Iraguha',
+
+},{
+     id:'002',
+     name:'Cyusa'
+}]
+
 
 app.get('/',(req,res)=>{
      res.send('Hello')
